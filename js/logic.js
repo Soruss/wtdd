@@ -135,6 +135,7 @@ function startDeal() {
 	createNewDeck()
     shuffle();
     dealOut();
+    nextDraw();
 }
 
 function deckCount() {

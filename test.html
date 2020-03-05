@@ -1,16 +1,11 @@
 <html>
-    
 <head>
     <meta charset='UTF-8'>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/logic.js"></script>
 </head>
     
 <body style="background-color: antiquewhite">
@@ -19,18 +14,20 @@
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <h5>COLUMN 1</h5>
+            <h5 id="deckcount">COLUMN 1</h5>
             <div class="row">
-                <button>RE-SHUFFLE</button>
-                <button>NEXT DRAW</button><br><br>
-                <img class="card" src="assets/Cards/BIS/bis-10.jpg" alt="Card">
-                <img class="card" src="assets/Cards/BIS/bis-back.jpg" alt="Card">
+                
+                <button type="button" onClick="startDeal()">RE-SHUFFLE</button>
+                <button onClick="nextDraw()">NEXT DRAW</button><br><br>
+                
+                <img class="card" id="deck1" src="assets/Cards/land-11-extra.jpg" alt="Card">
+                <img class="card" id="back-deck1" src="assets/Cards/BIS/bis-back.jpg" alt="Card">
                 <br>
-                <img class="card" src="assets/Cards/Landscaper/1.jpg" alt="Card">
-                <img class="card" src="assets/Cards/Landscaper/Landscaper.jpg" alt="Card">
+                <img class="card" id="deck2" src="" alt="Card">
+                <img class="card" id="back-deck2" src="assets/Cards/Landscaper/Landscaper.jpg" alt="Card">
                 <br>
-                <img class="card" src="assets/Cards/Pool-Manufacturer/10.jpg" alt="Card">
-                <img class="card" src="assets/Cards/Pool-Manufacturer/10.jpg" alt="Card">
+                <img class="card" id="deck3" src="" alt="Card">
+                <img class="card" id="back-deck3" src="assets/Cards/Pool-Manufacturer/pool-back.jpg" alt="Card">
                 <br>
             </div>
         </div>
@@ -39,9 +36,9 @@
             <button>RE-SHUFFLE</button><br><br>
             <img class="card" src="assets/Cards/City-Plan/Front/n1.jpg" alt="Card">
             <br>
-            <img class="card" src="assets/Cards/City-Plan/Front/n1_2.jpg" alt="Card">
+            <img class="card" src="assets/Cards/City-Plan/Front/n1-2.jpg" alt="Card">
             <br>
-            <img class="card" src="assets/Cards/City-Plan/Front/n1_3.jpg" alt="Card">
+            <img class="card" src="assets/Cards/City-Plan/Front/n1-3.jpg" alt="Card">
             <br>
         </div>
     </div>
@@ -52,7 +49,7 @@
         <li><a target="_blank" href="">Instructions &amp; Source</a></li>
         <li><a target="_blank" href="https://boardgamegeek.com/filepage/162102/welcome-english-rules-20">Offical rules</a></li>
     </ul>
-</footer>    
+</footer>
 </body>    
 </head>
 </html>

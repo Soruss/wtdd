@@ -28,9 +28,3 @@ footer li + li::before {
   content: "•";
   margin: 0 0.5em;
 }
-
-p {
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-}

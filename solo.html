@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/solo-mode.js"></script>
+</head>
+    
+<body style="background-color: antiquewhite">
+    <div>
+        <h1>Welcome To</h1>
+    </div>
+    <div class="row">
+
+            <h5 id="deckcount">COLUMN 1</h5>
+            <div class="row">
+                <button type="button" onClick="startDeal()">RE-SHUFFLE</button>
+                <button onClick="dealOut()">NEXT DRAW</button><br><br>
+                
+                <img class="card" id="deck" src="assets/Cards/land-11-extra.jpg" alt="Card">
+                <span>&#10132;</span>
+                <img class="card" id="draw1" src="assets/Cards/BIS/bis-back.jpg" alt="Card">
+                <img class="card" id="draw2" src="" alt="Card">
+                <img class="card" id="draw3" src="assets/Cards/Landscaper/Landscaper.jpg" alt="Card">
+            </div>
+
+            <h5>COLUMN 2</h5>
+            <button onClick="newCityPlan()">RE-SHUFFLE</button><br><br>
+            <img class="card" id="plan1" src="assets/Cards/n1.jpg" alt="Card">
+            <img class="card" id="plan2" src="assets/Cards/n1-2.jpg" alt="Card">
+            <img class="card" id="plan3" src="assets/Cards/n1-3.jpg" alt="Card">
+    </div>
+    <br>
+<footer>
+    <ul>
+        <li><a target="_blank" href="https://deepwater.games/collections/featured-products/products/pre-order-welcome-to">Welcome To</a> &copy; Deep Water Games</li>
+        <li><a target="_blank" href="">Instructions &amp; Source</a></li>
+        <li><a target="_blank" href="https://boardgamegeek.com/filepage/162102/welcome-english-rules-20">Offical rules</a></li>
+    </ul>
+</footer>
+</body>    
+</head>
+</html>
